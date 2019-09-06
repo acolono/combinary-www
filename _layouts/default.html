@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "de-AT" }}">
+  <head>
+    <meta charset="UTF-8">
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1A0DAF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">
+        combinary
+      </h1>
+      <h2 class="project-tagline">
+        Your open source suite that to backup, analyze and present your social media activities and other structured data
+      </h2>
+      {% if site.github.is_project_page %}
+        <a href="https://www.acolono.com/combinary" class="btn">More Details</a>
+      {% endif %}
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner">a project by <a href="https://www.acolono.com">acolono GmbH</a></span>
+        {% endif %}
+        <span class="site-footer-credits">funded by <a href="https://www.netidee.at">netidee</a></span>
+      </footer>
+    </main>
+  </body>
+</html>
